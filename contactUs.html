@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Second Web Page</title>
+        <title>2.5 sec Image Change</title>
         <link rel = "stylesheet" type="text/css" href="styles/style1.css">
         <script src = "js/clock.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="jQuery/jquery_validation.js"></script>
+        <script src = "js/2.5s image change.js"></script>
     </head>
-    <body onload = "startTime()">
+    <body onload = "startTimer();startTime();">
         
             <div class = "header1">
                 <div class = "topnav1">
                     <img src="images/logo.png">
                     <h1>UPPER</h1>
                     <div id = "txt" ></div>
-
                     <a href="#">Contact</a>
                     <a href="#">About us</a>
                     <a href="#">Third Grid</a>
@@ -31,7 +29,7 @@
                         
                         <form name="ContactUs" onsubmit="return validate()">
                             <input type="text" name="Name" placeholder ="Name" id="fname"><br>
-                            <input type="text" name="Email" placeholder="Email" id="fmail"><br>
+                            <input type="text" name="Email" placeholder="Email" id="fname"><br>
                             <textarea name="Comment" placeholder="Your message" id="msg"></textarea></br>
                             <input type="submit" value="Submit" id="button">
                         </form>
