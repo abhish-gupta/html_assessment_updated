@@ -1,0 +1,220 @@
+Sol. 1:-
+
+
+
+
+sol. 2:-
+
+<html>
+    <head>
+      <title>Even numbers upto n</title>
+    </head>
+    <body>
+      <script type = "text/javascript">
+        var n;
+        n = prompt("enter any number");
+        for(var i=1;i<=n;i++)
+        {
+          if(i%2==0)
+          document.write(i+"<br>");
+        }
+      </script>  
+    </body>
+</html>
+
+
+sol. 3:-
+
+<html>
+<head>
+  <script>
+    function reverseArr(input) {
+        var ret = [];
+        for(var i = input.length-1; i >= 0; i--) {
+            ret.push(input[i]);
+        }
+        document.write(ret+"<br>");
+        
+    }
+  </script>
+</head>
+<body>
+  <script>
+    var a = [43,"what",9,true,"cannot",false,"be",3,true]
+    var b = reverseArr(a);
+    
+  </script>
+</body>
+</html>
+
+
+sol. 4 :-
+
+<html>
+    <head>
+        <title>sum of two arrays</title>
+        <script>
+            function arraySum(arr1,arr2){
+                var res=[];
+                for(var i=0;i<arr1.length;i++)
+                {
+                    res[i]=arr1[i]+arr2[i];
+                }
+                return res;
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            var res;
+            var arr1=[1,2,3,4,5];
+            var arr2=[5,10,15,20,25];
+            res=arraySum(arr1,arr2);
+            document.write(res+"<br>");
+        </script>
+    </body>
+</html>
+
+
+sol. 5:-
+
+<html>
+    <head>
+        <title>replacing every second character of string</title>
+    </head>
+    <body>
+        <script>
+            var str = prompt("enter a string:");
+            str=str.split('');
+            for (var i = 0; i <str.length; i++) {
+                if(i%2!=0)
+                {
+                    str[i] = "Z";
+                }
+            }
+            document.write(str.join("")+"<br>");
+        </script>
+    </body>
+</html>
+
+
+sol. 6:-
+
+<html>
+    <head>
+        <title>checking if string contains y or not</title>
+    </head>
+    <body>
+        <script>
+            function checkString(str) {
+                const len = str.length;
+
+                for (let i = 0; i < len; i++) {
+                    if (str[i]=='y') {
+                        return 'yes';
+                    }
+                }
+                return 'no';
+            }
+            const string = prompt('Enter a string: ');
+            const value = checkString(string);
+            document.write(value+"<br>");
+        </script>
+    </body>
+</html>
+
+
+sol. 7:-
+
+<html>
+<head>
+    <title>factorial of a given number</title>
+</head>
+    <body>
+        <script type ="text/javascript">
+            var n,fact=1,n1;
+            n1=n;
+            n=prompt("enter any number")
+            while (n>=1)
+                {
+                    fact=fact*n;
+                    n=n-1;
+                }
+            document.write("factorial of given number is "+ fact+"<br>");
+        </script>
+    </body>
+</html>
+
+
+sol. 8:-
+
+<html>
+    <head>
+        <title>guessing a four digit pin</title>
+    </head>
+    <body>
+        <script>
+            const p=9057;
+            var pin=prompt("please make your guess:");
+            for(var i=1;i<=3;i++)
+            {
+                if(p==pin)
+                {
+                    document.write("That was correct!"+"<br>");
+                    break;
+                }
+                else
+                {
+                    alert("Sorry that was wrong.");
+                    prompt("please make your guess:");
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+sol. 9:-
+
+<html>
+    <head>
+        <title>checking if string is palindrome or not</title>
+    </head>
+    <body>
+        <script>
+            function checkPalindrome(str) {
+                const len = string.length;
+
+                for (let i = 0; i < len / 2; i++) {
+                    if (string[i] !== string[len - 1 - i]) {
+                        return 'No';
+                    }
+                }
+                return 'Yes';
+            }
+            const string = prompt('Enter a string: ');
+            const value = checkPalindrome(string);
+            document.write(value+"<br>");
+        </script>
+    </body>
+</html>
+
+
+sol. 10:-
+
+<html>
+<head>
+    <title>summation upto n</title>
+</head>
+    <body>
+        <script type ="text/javascript">
+            var n, total=0;
+            n=prompt("enter any number")
+            for(var i=1;i<=n;i++)
+            {
+                total=total+i;
+            }
+            document.write("summation upto given number is "+ total+"<br>");
+        </script>
+    </body>
+</html>
