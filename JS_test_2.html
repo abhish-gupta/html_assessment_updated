@@ -1,0 +1,196 @@
+Sol. 1:-
+
+<html>
+    <head>
+        <title>Output acc the table</title>
+    </head>
+    <body>
+        <script>
+            function StringOutput(String){
+                var str = String.toLowerCase();
+                var output;
+                switch(str) {
+                case "jabroni":
+                    output = "Patron Tequila";
+                    break;
+                case "school counselor":
+                    output = "Anything with Alcohol";
+                    break;
+                case "programmer":
+                    output = "Hipster Craft Beer";
+                    break;
+                case "bike gang member":
+                    output = "Moonshine";
+                    break;
+                case "politician":
+                    output = "Your tax dollars";
+                    break;
+                case "rapper":
+                    output = "Cristal";
+                    break;
+                default:
+                    output = "Beer";
+                
+                }  
+                return output;   
+            }
+            var str=prompt("enter a string:");
+            document.write(StringOutput(str) + "<br>");
+        </script>
+    </body>
+</html>
+
+
+Sol. 2:-
+
+<html>
+    <head>
+        <title>return even indexes of string</title>
+    </head>
+    <body>
+        <script>
+            var str="abcdefghi";
+                var even=[];
+                for(var i=1;i<=str.length;i++)
+                {
+                    if(i%2!=0)
+                    {
+                        even.push(str[i]);
+                    }
+                }
+            document.write(even.join(','));
+        </script>
+    </body>
+</html>
+
+
+Sol. 5:-
+
+<html>
+    <head>
+        <title>reverse the given string</title>
+    </head>
+    <body>
+        <script>
+        function ReverseString(str) {
+
+            const revArray = [];
+            const length = str.length - 1;
+            for(let i = length; i >= 0; i--) {
+                revArray.push(str[i]);
+            }
+            return revArray.join('');
+        }
+
+        document.write(ReverseString("world"))
+        </script>
+    </body>
+</html>
+
+
+Sol. 7:-
+
+<html>
+    <head>
+        <title>reverse the words</title>
+    </head>
+    <body>
+        <script>
+            function reversethewords(str) {
+                var arr = str.split(' ');
+                var reversedarr = [];
+                var i;
+                for(i=arr.length-1 ;i>=0;i-- ){
+                    reversedarr.push(arr[i]);
+                }
+                var result = reversedarr.join(' ');
+                
+                return result;
+                }
+                document.write(reversethewords("The greatest victory is that which require no battle") + "<br>");
+        </script>
+    </body>
+</html>
+
+
+Sol. 8:-
+
+
+<html>
+    <head>
+        <title>no. of vowels in string</title>
+    </head>
+    <body>
+        <script>
+            var str=prompt("enter the string:");
+            var count=0;
+            for(var i=0;i<str.length;i++)
+            {
+                if(str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u"){        
+                    count++;
+                }          
+            }
+            document.write("number of vowels in the string are" +count);
+        </script>
+    </body>
+</html>
+
+
+Sol. 9:-
+
+
+<html>
+    <head>
+        <title>name starting with r</title>
+    </head>
+    <body>
+        <script>
+            var str=prompt("enter the string:");
+            if(str[0]=='r' || str[0]=='R')
+            {
+                document.write(str+" plays banjo");
+            }
+            else
+            {
+                document.write(str+" does not play banjo");
+            }
+            
+        </script>
+    </body>
+</html>
+
+
+Sol. 10:-
+
+
+<html>
+    <head>
+        <title>check instance of x</title>
+    </head>
+    <body>
+        <script>
+            var str=prompt("enter the string:");
+            var len=str.length;
+            var flag=0;
+            for(var i=1;i<len-1;i++)
+            {
+                if(str[i-1]=="x" && str[i]=="x" && str[i+1]=="x"){        
+                    flag=1;
+                }
+                else
+                {
+                    flag=0; 
+                }
+            }
+            if(flag==1)
+            {
+            	document.write('true');
+            }
+            else
+            {
+            	document.write('false');
+            }
+            
+        </script>
+    </body>
+</html>
